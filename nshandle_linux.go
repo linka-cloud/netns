@@ -1,3 +1,6 @@
+//go:build linux && go1.10
+// +build linux,go1.10
+
 // Package netns allows ultra-simple network namespace handling. NsHandles
 // can be retrieved and set. Note that the current namespace is thread
 // local so actions that set and reset namespaces should use LockOSThread
